@@ -22,7 +22,21 @@
     }
 }
 
+#user-input {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #dc3545;
+}
+
 .error {
     animation-name: shake;
     animation-duration: 0.3s;
+}
+
+body {
+    background-image: url('images/black-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }

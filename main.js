@@ -19,7 +19,6 @@ btn.addEventListener('click', () => {
   var user_input = document.getElementById('user-input');
   var result_div = document.getElementById('result-div');
   input = url_validate(user_input.value)
-  console.log(input)
 
   if (user_input.value != '' && input) {
     result_div.innerHTML = '';
