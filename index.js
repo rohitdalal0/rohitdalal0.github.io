@@ -47,7 +47,7 @@ btn.addEventListener('click', () => {
     result_div.innerHTML += '<a class="btn btn-outline-danger m-2" target="_blank" href=https://www.google.com/search?q=site:*.' + input[1] + '+inurl:"admin+Login"+intitle:"Admin+Panel" >Wordpress Admin</a>';
     result_div.innerHTML += '<a class="btn btn-outline-danger m-2" target="_blank" href=https://www.google.com/search?q=site:*.' + input[1] + '+inurl:login+|+inurl:logon+|+inurl:sign-in+|+inurl:signin+|+inurl:login-portal+|+inurl:user_login >Login page</a>';
     result_div.innerHTML += '<a class="btn btn-outline-danger m-2" target="_blank" href=https://www.google.com/search?q=site:*.' + input[1] + '+intext:@gmail.com+|+intext:@yahoo.com+|+intext:@yahoo.co.in >eMail</a>';
-
+    result_div.innerHTML += '<a class="btn btn-outline-danger m-2" target="_blank" href=https://github.com/search?q=%22'+ input[1] +'%22+ftp+password+passwd+cred+ssh+credentials&type=code >Github search</a>';
 
   } else {
     user_input.classList.add ('error');
