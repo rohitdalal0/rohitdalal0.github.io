@@ -1,2 +1,2 @@
-# rohit-dalal.github.io
+# webdorks.github.io
 A information gathering tool for security professionals
