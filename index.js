@@ -4,7 +4,7 @@ let btn = document.getElementById('btn-search');
 
 
 function url_validate(url) {
-  var urlRegex =/^https?:\/\/[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  var urlRegex =/(https?:\/\/(?:www\. |(?!www))[a-zA-Z0-9][a-zA-Z0-9- 5 ]+[a-zA-Z0-9]\;
   if (url.match(urlRegex)){
     if (url.startsWith('https')){
       return url.split('://')
