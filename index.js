@@ -4,7 +4,7 @@ let btn = document.getElementById('btn-search');
 
 
 function url_validate(url) {
-  var urlRegex =/^ ( (https?|ftp|smtp|http):\\/\\/)? (www.)? [a-z0-9]+ (\\. [a-z] {2,}) {1,3} (#?\\/? [a-zA-Z0-9#]+)*\\/? (\\? [a-zA-Z0-9-_]+= [a-zA-Z0-9-%]+&?)?$/;;
+  var urlRegex =/^ (http|https):\\/\\/ ( ( ( ( [a-z0-9] ( [a-z0-9-]* [a-z0-9])*)\\\\.)+ [a-z] {2,})| ( (\\\\d {1,3}\\\\.) {3}\\\\d {1,3})) (\\\\/ [-a-z\\\\d%_.~+]*)* (\\\\? [;&a-z\\\\d%_.~+=-]*)? (\\\\# [-a-z\\\\d_]*)?$/i;
   if (url.match(urlRegex)){
     if (url.startsWith('https')){
       return url.split('://')
