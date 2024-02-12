@@ -1,0 +1,81 @@
+@keyframes shake {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -5px;
+        margin-right: 5px;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: 5px;
+        margin-right: -5px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+#input-div {
+    width: 50%;
+}
+
+#user-input {
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid #dc3545;
+}
+
+input.form-control::placeholder {
+    color: #4e4e4e;
+}
+
+.error {
+    animation-name: shake;
+    animation-duration: 0.3s;
+}
+
+body.body-style {
+    background-color: #212529;
+}
+
+body > div.output-container > div > h6{
+    display: none;
+    color: #737373;
+    border-bottom-color: #737373;
+    border-top-color: #737373;
+    width: 190px;
+    padding: 5px;
+    /* border-radius: 42px; */
+}
+
+
+
+/* Result div container */
+body > div.output-container > div {
+    width: 80%;
+    margin: 50px auto 10px auto;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    body>#input-div {
+        width: 90%;
+    }
+
+    body>div.output-container {
+        width: 98%;
+        margin: auto;
+    }
+    body>div.output-container>div {
+        margin: 0;
+        margin: 50px 10px 10px 10px;
+    }
+}
